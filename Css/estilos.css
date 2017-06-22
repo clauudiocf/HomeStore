@@ -1,0 +1,66 @@
+#cabecera{
+    height: 120px;
+    width: 100%;
+    background-color: lightcoral;
+}
+#logo{
+    height: 120px;
+    width: 15%;
+    float:left;
+    background-image:url("Imagenes/logo.png");
+    background-repeat: no-repeat;
+    margin-left: 5%;
+}
+#titulo{
+    height: 120px;
+    width: 51%;
+    float:left;
+    font-size: x-large;
+    text-align: center;
+    background-color: lightcyan;
+}
+#loguin{
+    height: 120px;
+    width: 29%;
+    float:left;
+    background-color: lawngreen;
+}
+#navegador{
+    height: 50px;
+    width: 100%;
+    background-color: teal;
+    float:left;
+}
+#btn{
+    height: 50px;
+    width: 10%;
+    float: left;
+    background-color: palegoldenrod;
+    margin-left: 3%;
+}
+#carro{
+    height: 50px;
+    width: 10%;
+    float: right;
+    background-color: navajowhite;
+    margin-right: 3%;
+}
+#galeria{
+    height: 200px;
+    width: 100%;
+    float: left;
+    background-color: slategray;
+}
+#producto{
+    height: 200px;
+    width: 100%;
+    float: left;
+    background-color:tomato;
+}
+#piedepagina{
+    height: 50px;
+    width: 100%;
+    float: left;
+    background-color: red;
+    text-align: center;
+}
