@@ -11,6 +11,8 @@ and open the template in the editor.
         <title>H&S</title>
     </head>
     <body>
+        
+         
         <?php
         ?>
         <div id="cabecera">
@@ -47,7 +49,8 @@ and open the template in the editor.
             <div id="btn">
                 
                 <center>
-                <input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod">
+                    
+                <a href="index.php"></a><input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod">
                 </center>
             </div> 
                                
@@ -77,7 +80,8 @@ and open the template in the editor.
         </div>
             
         <div id="galeria">
-           
+            
+            <img src="Css/Imagenes/chaise-economicos-648.jpg" alt=""/>
         </div>
         <br>
         <div id="productos">
@@ -95,6 +99,6 @@ and open the template in the editor.
             <h2><a href="http://www.latiendahome.com" target="_blank"> IR A LATIENDAHOME</a></h2>
             
         </div>
-
+        
     </body>
 </html>

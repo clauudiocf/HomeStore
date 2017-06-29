@@ -19,7 +19,7 @@
             <div id="btn">
                 
                 <center>
-                <input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod">
+                <a href="index.php"></a><input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod">
                 </center>
             </div> 
                                
@@ -64,8 +64,8 @@
                <font size=6 color="blue">
                <a>Colchones de latex</a> 
                </font>
-               <div id="producto"><img style="float:left;" src="Css/Imagenes/listado_14.jpg" alt="Colchon Flex" title="COLCHONES"/>jajajaja</div> 
-               <div id="producto"><img style="float:left;" src="Css/Imagenes/listado_858.jpg" alt=""/>jajajajajjaja</div>
+               <div id="producto"><img style="float:left;" src="Css/Imagenes/listado_14.jpg" alt="Colchon Flex" title="COLCHONES"/></div> 
+               <div id="producto"><img style="float:left;" src="Css/Imagenes/listado_858.jpg" alt=""/></div>
                <div  id="producto"><img src="Css/Imagenes/listado_1585.jpg" alt="" align="right"/></div>   
             </div>
                          <br>

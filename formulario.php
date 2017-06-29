@@ -24,7 +24,7 @@ and open the template in the editor.
             <div id="btn">
                 
                 <center>
-                <input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod">
+                <a href="index.php"></a><input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod">
                 </center>
             </div> 
                                
@@ -83,6 +83,7 @@ and open the template in the editor.
                                     </SELECT>
                                     </TD>
                                 </TR>
+                                
                                 <tr>
                                     <td><input type="reset" value="Borrar todo"> <input type="submit" value="Enviar"> </td>
                                 </tr>
@@ -93,7 +94,14 @@ and open the template in the editor.
         </div>
         <br>
         <div id="productos">
-            <div id="producto"></div>  
+            <div id="producto">
+                <form action="controlador/upload.php" method="post" enctype="multipart/form-data">
+                                <div><input type="file" name="archivo" id="archivo"></div>
+                                <div><label>Nombre Archivo</label><input type="text" name="nombre" id="nombre"></div>
+                                <input type="submit" value="Subir Archivo" onclick="alert('Se subio el archivo');
+                return false;"/>
+                                </form>
+            </div>  
             <div id="producto"></div>        
             <br>
             <div id="producto"></div> 
