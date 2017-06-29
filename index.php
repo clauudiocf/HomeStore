@@ -43,7 +43,7 @@ and open the template in the editor.
             </div>
         </div>
         <div id="navegador">
-            <div id="btn"></div>
+            <div id="btn"><div><a href="Producto/index.php">Pagina mantenedor producto</a></div>
             <div id="btn"></div>
             <div id="btn"></div>
             <div id="btn"></div>

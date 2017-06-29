@@ -1,7 +1,7 @@
 	<?php
 	
 
-			$mysqli = new mysqli("localhost", "root", "", "bdpersona");	
+			$mysqli = new mysqli("localhost", "root", "", "");	
 			$nom = $_GET['nombre'];
 			$edad = $_GET['edad'];
 			$dir = $_GET['direccion'];						

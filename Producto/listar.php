@@ -1,8 +1,3 @@
-<?php
-	session_start();
-	if(isset($_SESSION['nombreusu']))
-	{
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,11 +26,7 @@
 						<li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>							
 						<li><a href="cerrars.php"><span class="glyphicon glyphicon-remove"></span>Salir</a></li>						
 					</ul>
-					<ul class="nav navbar-nav navbar-right">
-						<?php								
-							echo "<li><a href='#'><span class='glyphicon glyphicon-user'></span> ".$_SESSION['nombreusu']."</a></li>";
-						?>				      
-				    </ul>			
+							
 				</div>
 			</div>
 		</nav>
@@ -53,12 +44,12 @@
 					<th>Id</th><th>Nombre</th><th>Edad</th><th>Direccion</th><th><span class="glyphicon glyphicon-wrench"></span></th>
 				</tr>			
 <?php
-			$mysqli = new mysqli("localhost", "root", "", "bdpersona");		
+			$mysqli = new mysqli("localhost", "root", "", "mybd");		
 			if ($mysqli->connect_errno) {
 			    echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 			    exit();
 			}
-			$consulta= "SELECT * FROM tbcontactos";
+			$consulta= "SELECT * FROM producto";
 			if ($resultado = $mysqli->query($consulta)) 
 			{
 				while ($fila = $resultado->fetch_row()) 
@@ -177,12 +168,7 @@
 </body>
 </html>
 
-<?php
-	}
-	else
-	{
-		?>
-		 <META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php">
-		 <?php
-	}
+
 ?>
+<META HTTP-EQUIV="Refresh" CONTENT="0; URL=index.php">
+<?php
