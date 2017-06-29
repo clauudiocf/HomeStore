@@ -19,38 +19,18 @@ and open the template in the editor.
             <div id="logo">   </div>
             <div id="titulo"><h1>Home&Store</h1></div>
             <div id="loguin"> 
-                <script>
-                    $(document).ready(function(){
-                            $("#enviar").click(function(){
-                                /*$("form").hide();
-                                alert("Ocultaste el formulario ;-) "+ $("#nomusuario").val());*/
-
-                                if ($("#nomusuario").val()!="" && $("#clave").val()!=""){
-                                    ///*$("#frmusuario").submit();
-                                        $.ajax({url:"controlador/ValidaUsuario.php"
-                                            ,type:'post'
-                                            ,data:{'nomusuario':$("#nomusuario").val(),
-                                                'clave':$("#clave").val()
-                                                }           
-                                            ,success:function(resultado){
-                                                $("#mensaje").html(resultado);
-                                            }
-                                        });
-                                    }//Cierre IF Valida blancos
-                                else
-                                    alert("Debe Agregar el usuario y clave");
-                            });//Click Boton enviar
-                     });//Function Ready de la página
-                </script>  
+               <form action="checklogin.php" method="post" > 
+                    <label>Nombre Usuario:</label><br> <input name="username" type="text" id="username" required> </br> 
+                    <label>Password:</label><br> <input name="password" type="password" id="password" required> <br><br> 
+            <input type="submit" name="Submit" value="LOGIN">
+        </form> <hr/>
             </div>
         </div>
         <div id="navegador">
         
-            <div id="btn">
-                
-                <center>
-                    
-                <a href="index.php"></a><input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod">
+            <div id="btn">              
+                <center>     
+                    <a href="index.php"><input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod"/></a>
                 </center>
             </div> 
                                

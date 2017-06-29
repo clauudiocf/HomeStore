@@ -17,14 +17,20 @@ and open the template in the editor.
         <div id="cabecera">
             <div id="logo">   </div>
             <div id="titulo"><h1>Home&Store</h1></div>
-            <div id="loguin">   </div>
+            <div id="loguin"> 
+                <form action="checklogin.php" method="post" > 
+                    <label>Nombre Usuario:</label><br> <input name="username" type="text" id="username" required> </br> 
+                    <label>Password:</label><br> <input name="password" type="password" id="password" required> <br><br> 
+            <input type="submit" name="Submit" value="LOGIN">
+        </form> <hr/>
+            </div>
         </div>
         
         <div id="navegador">  
             <div id="btn">
                 
                 <center>
-                <a href="index.php"></a><input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod">
+                <a href="index.php"><input type="submit" value='Inicio' style="BORDER: palegoldenrod 3px solid; FONT-SIZE: 27pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod"/></a>
                 </center>
             </div> 
                                
