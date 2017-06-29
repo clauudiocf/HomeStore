@@ -6,44 +6,21 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <meta charset="UTF-8">
+        <meta http-equiv="Content-Type" charset="UTF-8">
         <link href="Css/estilos.css" rel="stylesheet" type="text/css"/>
         <title>H&S</title>
     </head>
     <body>
         <?php
-        ?>
+        ?> 
+        
         <div id="cabecera">
             <div id="logo">   </div>
             <div id="titulo"><h1>Home&Store</h1></div>
-            <div id="loguin"> 
-                <script>
-                    $(document).ready(function(){
-                            $("#enviar").click(function(){
-                                /*$("form").hide();
-                                alert("Ocultaste el formulario ;-) "+ $("#nomusuario").val());*/
-
-                                if ($("#nomusuario").val()!="" && $("#clave").val()!=""){
-                                    ///*$("#frmusuario").submit();
-                                        $.ajax({url:"controlador/ValidaUsuario.php"
-                                            ,type:'post'
-                                            ,data:{'nomusuario':$("#nomusuario").val(),
-                                                'clave':$("#clave").val()
-                                                }           
-                                            ,success:function(resultado){
-                                                $("#mensaje").html(resultado);
-                                            }
-                                        });
-                                    }//Cierre IF Valida blancos
-                                else
-                                    alert("Debe Agregar el usuario y clave");
-                            });//Click Boton enviar
-                     });//Function Ready de la página
-                </script>  
-            </div>
+            <div id="loguin">   </div>
         </div>
-        <div id="navegador">
         
+        <div id="navegador">  
             <div id="btn">
                 
                 <center>
@@ -71,13 +48,48 @@ and open the template in the editor.
                 <input type="submit" value="Almohada y Cojin" style="BORDER: palegoldenrod 2px solid; FONT-SIZE: 18pt; FONT-FAMILY: Comic Sans; BACKGROUND-COLOR: palegoldenrod"/>
                 </center>
             </div>
-          </div>   
-        <div id="carro">
-           
         </div>
-            
+     
         <div id="galeria">
-           
+            <form name="formulario" action="EnvioGet.php" method="GET">
+            <fieldset>
+			    <legend>FORMULARIO DE INGRESO</legend>
+			<table>
+			    <tr>
+				    <td>Nombre Usuario</td>
+					<td><input type="text" name="nombre"/></td>
+				</tr>
+				<tr>
+				    <td>Contraseña</td>
+                                    <td><input type="password" name="contraseña"/></td>
+				</tr>
+                                <tr>
+				    <td>Repita Contraseña</td>
+                                    <td><input type="password" name="contraseña2"/></td>
+				</tr>
+                                <tr>
+				    <td>Email</td>
+                                    <td><input type="text" name="email"/></td>
+				</tr>
+                                <TR>
+                                    <TD>Ocupación</TD>
+                                    <TD>
+                                    <SELECT name="ocupación">
+                                    <OPTION VALUE="profesor">Profesor</OPTION>
+                                    <OPTION VALUE="estudiante">Estudiante</OPTION>
+                                    <OPTION VALUE="ingeniero">Ingeniero</OPTION>
+                                    <OPTION VALUE="jubilado">Jubilado</OPTION>
+                                    <OPTION VALUE="otro">Otro</OPTION>
+                                    </SELECT>
+                                    </TD>
+                                </TR>
+                                <tr>
+                                    <td><input type="reset" value="Borrar todo"> <input type="submit" value="Enviar"> </td>
+                                </tr>
+                                
+			</table>
+	</fieldset>
+                </form>
         </div>
         <br>
         <div id="productos">
@@ -91,10 +103,7 @@ and open the template in the editor.
             <div id="producto"></div>
         </div>
         <br>
-        <div id="piedepagina">
-            <h2><a href="http://www.latiendahome.com" target="_blank"> IR A LATIENDAHOME</a></h2>
-            
-        </div>
-
+        <div id="piedepagina"></div>
+        
     </body>
 </html>

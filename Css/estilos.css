@@ -33,17 +33,18 @@
 }
 #btn{
     height: 50px;
-    width: 10%;
+    width: 15%;
     float: left;
     background-color: palegoldenrod;
-    margin-left: 3%;
+    margin-left: 2%;
 }
 #carro{
-    height: 50px;
+     height: 50px;
     width: 10%;
     float: right;
     background-color: navajowhite;
     margin-right: 3%;
+      
 }
 #galeria{
     height: 200px;
@@ -55,11 +56,12 @@
     height: 200px;
     width: 100%;
     float: left;
-    background-color:tomato;
+    background-color:tomato; 
 }
+
 #piedepagina{
     height: 50px;
-    width: 100%;
+    width: 300%;
     float: left;
     background-color: red;
     text-align: center;
