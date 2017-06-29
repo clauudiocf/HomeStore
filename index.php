@@ -16,7 +16,31 @@ and open the template in the editor.
         <div id="cabecera">
             <div id="logo">   </div>
             <div id="titulo"><h1>Home&Store</h1></div>
-            <div id="loguin">   </div>
+            <div id="loguin"> 
+                <script>
+                    $(document).ready(function(){
+                            $("#enviar").click(function(){
+                                /*$("form").hide();
+                                alert("Ocultaste el formulario ;-) "+ $("#nomusuario").val());*/
+
+                                if ($("#nomusuario").val()!="" && $("#clave").val()!=""){
+                                    ///*$("#frmusuario").submit();
+                                        $.ajax({url:"controlador/ValidaUsuario.php"
+                                            ,type:'post'
+                                            ,data:{'nomusuario':$("#nomusuario").val(),
+                                                'clave':$("#clave").val()
+                                                }           
+                                            ,success:function(resultado){
+                                                $("#mensaje").html(resultado);
+                                            }
+                                        });
+                                    }//Cierre IF Valida blancos
+                                else
+                                    alert("Debe Agregar el usuario y clave");
+                            });//Click Boton enviar
+                     });//Function Ready de la página
+                </script>  
+            </div>
         </div>
         <div id="navegador">
             <div id="btn"></div>
@@ -48,29 +72,5 @@ and open the template in the editor.
             <div id="mensaje"></div>
         </form>
 
-    </body>
-    <script>
-    $(document).ready(function(){
-            $("#enviar").click(function(){
-                /*$("form").hide();
-                alert("Ocultaste el formulario ;-) "+ $("#nomusuario").val());*/
-        
-                if ($("#nomusuario").val()!="" && $("#clave").val()!=""){
-                    ///*$("#frmusuario").submit();
-                        $.ajax({url:"controlador/ValidaUsuario.php"
-                            ,type:'post'
-                            ,data:{'nomusuario':$("#nomusuario").val(),
-                                'clave':$("#clave").val()
-                                }
-                            ,success:function(resultado){
-                                $("#mensaje").html(resultado);
-                            }
-                        });
-                    }//Cierre IF Valida blancos
-                else
-                    alert("Debe Agregar el usuario y clave");
-            });//Click Boton enviar
-     });//Function Ready de la página
-     </script>
     </body>
 </html>
